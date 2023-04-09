@@ -12,7 +12,7 @@ const App = () => {
   const [userState, setUserState] = useState('inputUser');
   const [notFound, setNotFound] = useState(false);
 
-  const gettinUser = async (user) => {
+  const gettingUser = async (user) => {
     const userResponse = await getGitHubUser(user)
 
     if(userState === 'octocat'){
@@ -32,7 +32,7 @@ const App = () => {
   console.log(userState);
 
   useEffect(() =>{
-    gettinUser(inputUser)
+    gettingUser(inputUser)
   },
   [inputUser])
 
@@ -47,7 +47,7 @@ const App = () => {
       flexDirection: 'column',
       alignItems: 'center'
     }} >
-      <Searcher inputUser={inputUser} setInputUser={setInputUser} />
+      <Searcher inputUser={inputUser} setInputUser={setInputUser}/>
       <UserCard userState={userState}/>
     </Container>
   )

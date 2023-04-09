@@ -31,7 +31,7 @@ const { avatar_url } = userState;
         <Stack
           direction="column"
           spacing={1}
-          sx={{margin: '20px'}}
+          sx={{margin: '30px'}}
         >
           <PrincipalInformation userState={userState} />
           <Description userState={userState} />
