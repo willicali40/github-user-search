@@ -20,6 +20,7 @@ const Searcher = (props) => {
   return(
     <Stack 
       direction= 'row'
+      justifyContent='center'
       sx={{
         marginTop: '30px',
         width: '80%'

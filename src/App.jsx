@@ -40,7 +40,7 @@ const App = () => {
     <Container sx={{
       background: 'whitesmoke',
       width: '80vw',
-      height: '500px',
+      height: 'auto',
       borderRadius: '16px',
       marginTop: '40px',
       display: 'flex',

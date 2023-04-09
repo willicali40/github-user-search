@@ -12,7 +12,7 @@ const PaperInformation = (props) => {
 
   return(
     <Paper elevation={3}>
-      <Stack spacing={3} direction= 'row' sx={{justifyContent: 'space-evenly', margin: '20px'}}>
+      <Stack   spacing={{ xs: 3, sm: 3 }}  direction={{ xs: 'column', sm: 'row' }}  sx={{justifyContent: 'space-evenly', margin: '20px'}}>
         <Stack >
           <Typography variant='h5'>Respos</Typography>
           <Typography variant='h6'>{public_repos}</Typography>

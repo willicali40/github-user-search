@@ -14,7 +14,7 @@ const LocationInformation = (props) => {
     company
   } = userState;
   return(
-    <Grid container spacing={2} sx={{marginTop: '15px'}}>
+    <Grid container columns={{xs: 1, sm: 12}}  spacing={2} sx={{marginTop: '15px'}}>
       <Grid item xs={6 }>
         <Stack direction='row' spacing={2}>
           <LocationOnIcon/>
